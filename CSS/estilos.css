@@ -331,5 +331,13 @@ footer img{
     
 }*/
 
+.modal-dialog {
+    max-width: 90vw; /* Para que el modal sea más ancho */
+}
 
+.modal-body img {
+    max-height: 90vh; /* Para que la imagen se ajuste mejor a la pantalla */
+    width: auto;
+    height: auto;
+}
 
