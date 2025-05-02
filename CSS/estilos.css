@@ -1,16 +1,16 @@
 *{
-    font-family: Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
     padding: 0%;
 
 }
 
 body {
-    background-color: rgb(65, 69, 73);
+    background-color: #212529;
 }
 
 .navbar-default {
-    background: url(../img/transparentShapesMainNav.png), linear-gradient(270deg, #10069f 0, #9b26b6 100%);
+    background: url(../img/transparentShapesMainNav.png), linear-gradient(270deg, #09069f 0, #68217A 100%);
     background-repeat: no-repeat;
     box-shadow: 0 5px 2px 0 rgb(0 0 0 / 30%);
     color: white; /* Asegúrate de que el texto sea visible */
@@ -53,8 +53,13 @@ nav a:hover{
     color: rgb(174, 157, 209);
 
 }
+
+.romina {
+    color: #68217A; /* Un morado vibrante, similar a Visual Studio/C# */
+  }
+
 .uno{
-    background-color:rgb(65, 69, 73);
+    background-color:#1f1f1f;
     padding: 10%;
     height: 100%;
     
@@ -84,18 +89,20 @@ img{
 .h2_claro{
     text-align: center;
     padding: 3%;
-    color:rgb(95, 39, 206);   
+    color:rgb(197, 164, 248);   
 }
 
 h2 {
     text-align: center;
     padding: 3%;
-    color:rgb(197, 164, 248);   
+    color:#68217A;   
 }
 
 #cursos{
     margin: 2% 30%;
     color: rgb(95, 39, 206);
+    color:whitesmoke;
+    text-align: center;
     
 }
 
@@ -111,21 +118,22 @@ h2 {
     box-shadow: 10px 10px 15px rgb(87, 63, 136);
 }
 
-/*.img__perfil{
+.img__perfil{
     
-    box-shadow: 10px 10px 15px rgb(87, 63, 136);
-}*/
+   box-shadow: rgb(223, 214, 214);
+}
 
 .dos{
-    background-color: lightgray;
+    background-color: #212529;
 }
 
 .tres{
-    background-color: rgb(65, 69, 73);
+    background-color: #212529;
+    
 }
 
 .imagenes_1{
-    background-color: rgb(65, 69, 73);
+    background-color: lightgray;
     margin: auto;
     width: 50%;
     padding: 2%;
@@ -138,12 +146,14 @@ h2 {
     gap: 20px;*/
     justify-content: space-evenly;
     /*align-content: space-evenly;*/
-    box-shadow: 10px 15px 15px rgb(150, 150, 150);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    
 
 }
 
 .imagenes_2{
-    background-color: rgb(65, 69, 73);
+    background-color: lightgray;
     margin: auto;
     width: 50%;
     padding: 2%;
@@ -151,7 +161,8 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: stretch;
-    box-shadow: 10px 15px 15px rgb(150, 150, 150);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
     
 
 }
@@ -206,41 +217,7 @@ input[type="submit"]:hover{
     transform: scale(1.2);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
-/*.cards{
-    /*width: 100%;*/
-    /*height: 50vw;
-    padding: 5% 5% 8% 5%;
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    background-color: rgb(65, 69, 73);
-    overflow: hidden;
-}*/
 
-/*card{
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "ver";
-    border-radius: 18px;
-    font-family: verdana;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-    text-align: center;
-
-    transition: 0.5 ease;
-    cursor: pointer;
-}*/
-
-
-
-/*.card-img{
-    grid-area: image;
-    background: url("../img/gestor.jpg.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-}*/
 .img-ajustada {
     width: 100%;
     height: 100%;
@@ -256,23 +233,15 @@ input[type="submit"]:hover{
     overflow: hidden; /* Evita que sobresalga */
 }
 
-/*.card-text{
-    grid-area: text;
-    margin: 25px;
-    padding: 10px;
-}*/
+.card-bordered {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
 
 .card-title{
-    color: blueviolet;}
+    color: #68217A;}
 
-/*.card-ver{
-    grid-area: ver;
-    background: blueviolet;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    
 
-}*/
 
 .card-ver a{
     display: flex;
@@ -282,11 +251,20 @@ input[type="submit"]:hover{
     background: blueviolet;
     color: white;
     text-decoration: none;
-    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
 }
+
+
+.card-ver a:hover {
+    transform: scale(1.05);
+  }
 
 div.card.h-100 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
 }
 
     div.card.h-100:hover {
@@ -294,20 +272,25 @@ div.card.h-100 {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     }
 
-/*@media(max-width:991px){
-
-    .cards{
-        width: 100%;
-    }
-    .card{
-        width: 100%;
-    }
-
-}*/
+.card-curso {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-curso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
 
 .contenedor__principal {
     width: 75%;
 }
+
+svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    margin-bottom: -1px;
+  }
 
 footer{
     background-color: #1f1f1f;
@@ -319,17 +302,7 @@ footer{
           
 }
 
-/*footer a{
-    width: 5%;
-    padding: 1% 0.1%;
-    display: flex;
-    justify-content: space-evenly;
-}
 
-footer img{
-    width: 55%;
-    
-}*/
 
 .modal-dialog {
     max-width: 90vw; /* Para que el modal sea más ancho */
